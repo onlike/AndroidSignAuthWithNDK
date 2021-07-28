@@ -95,7 +95,7 @@ Java_com_lxy_auth_Auth_getAuthKey(JNIEnv *env, jclass clazz, jobject var0) {
     hex_sha[array_size * 2] = '\0';
 
     if (strcmp(hex_sha, sign_sha1) == 0) {
-        return env->NewStringUTF("stuff sign params");
+        return env->NewStringUTF("legal signer");
     }
 
     return env->NewStringUTF("illegal signer");
